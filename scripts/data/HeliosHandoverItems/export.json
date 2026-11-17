@@ -1,0 +1,16 @@
+{
+  "sfdxHardisLabel": "Helios Handover Items",
+  "sfdxHardisDescription": "Get template records for Handover Items",
+  "objects": [
+    {
+      "query": "Select  External_Id__c,Label__c,Sequence__c,Is_Template__c from Handover_Item__c where Is_Template__c =true",
+      "operation": "Upsert",
+      "externalId": "External_Id__c",
+      "master": true,
+      "deleteOldData": false,
+      "useQueryAll": false,
+      "allOrNone": true,
+      "updateWithMockData": false
+    }
+  ]
+}
