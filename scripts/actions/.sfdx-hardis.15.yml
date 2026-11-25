@@ -1,0 +1,9 @@
+commandsPostDeploy:
+  - id: 7f632b43-d397-4d46-8f26-6fcc41929dfd
+    label: Upsert Helios Handover Items
+    type: data
+    command: ""
+    parameters:
+      sfdmuProject: HeliosHandoverItems
+    runOnlyOnceByOrg: true
+    context: process-deployment-only
